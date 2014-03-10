@@ -1,0 +1,6 @@
+cluster:
+  name: elasticsearch
+network:
+  host: 'localhost'
+development:
+  hosts: 'localhost'

@@ -1,0 +1,15 @@
+Spree features test
+
+  Default spree test with translations mainly for backend. set up the your default
+configuration for translation and Spree.t do the rest.
+
+Basic example
+
+  before(:each) do
+    visit spree.edit_admin_general_settings_path
+  end
+
+  it "Cancel update preferences"  do
+      click_link Spree.t(:cancel)
+      expect(page).to have_content(Spree.t(:general_settings))
+  end

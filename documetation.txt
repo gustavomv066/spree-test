@@ -1,0 +1,163 @@
+Admin
+  (feature) products
+    (context) Properties
+      it Cancel creation of option type
+      it Create a valid property
+      it Create a invalid property
+    (context) Create products
+      it Cancel creation of a product
+      it Create a valid product
+      it Create a invalid product
+      it Create a product with full params
+    (context) Prototypes
+      it Cancel creation of a prototype
+      it Create a valid prototype
+      it Create a invalid prototype
+    (context) Option Types
+      it Cancel creation of option type
+      it Create a valid option type
+      it Create a invalid option type
+    (context) After create a product
+      (context) Edit details
+        it Don't edit and back
+      (context) Product properties
+        it Cancel
+        it Update
+      (context) Variants
+        it Cancel
+        it Add one
+      (context) Translations
+        it Cancel
+        it Update
+
+  (feature) Users
+    it Create a user without @ in his email
+    it Create a valid user
+    it Create a invalid user (blank fields)
+    it Cancel creation
+    it Create a user without password confirmation
+    it return to list of users
+    it Create a user with password too short
+    (context) After creation of a user
+      it Update his email
+      it Create a user and generate a key
+      (context) generate keys
+        it clear a key
+        it Regenerated a key
+
+  (feature) Orders
+    (context) New order
+      it Don't create a order and back
+      (context) Client details
+        it Blank update
+        it Update
+        (context) Payment
+      (context) Adjustment
+        it Invalid creation amount is not number
+        it Back to orders list
+        it Invalid creation amoun is not number
+        it Invalid creation (blank)
+        it Cancel creation
+
+  (feature) Configuration
+    (context) Shipping category
+      it Create a invalid shipping category
+      it Create a valid shipping category
+      it Don't create a shipping category return to index page
+    (context) Payment methods
+      it Create a invalid payment method
+      it Don't create a payment method and back
+      it Create a valid payment method
+    (context) Stock locations
+      (context) Stock transfers
+        it Don't create a transfer and back
+    (context) General preferences
+      it Cancel update preferences
+      it Update preferences
+    (context) Images preferences
+      it Update images preferences
+    (context) Taxonomies
+      it Create a invalid taxonomy (blank)
+      it Create a taxonomy and update name
+      it Create a valid taxonomy
+      it Don't create a taxonomy return to taxonomy page
+    (context) Trackers
+      it Cancel a creation
+      it Create a valid transfer track
+      it Don't create and back
+    (context) Zones
+      it Create a zones with same name
+      it Cancel creation of zone
+      it Don't create a zone and back
+      it Create a valid zones
+      it Create a invalid zones
+    (context) Shipping methods
+      it Cancel creation of shipping method
+      it Create a invalid shipping method (blank)
+      it Don't create a shipping method and back
+      it Create a valid shipping method
+      (context) After creation of a shipping method
+        it Wrong update (without category shipping)
+        it Back to shipping methods list
+        it Wrong update (without name)
+        it Update
+        it Back to shipping methods list with cancel
+    (context) Stock transfers
+      it Don't create a stock transfers and back
+    (context) Tax category
+      it Create a category tax with same name
+      it Cancel creation of category tax
+      it Don't create a category tax and back
+      it Create a valid category tax
+      it Create a invalid category tax
+    (context) Fee tax
+      it Create a invalid fee tax (rate amount as string)
+      it Cancel creation of fee tax
+      it Create a valid fee tax
+      it Create a invalid fee tax (rate amount as string)
+      it Create a invalid fee tax (lack arguments)
+    (context) Countries
+      it Cancel creation of Country
+      it Create a valid country
+      it Create a invalid country
+      it Don't create a country and back
+    (context) Preferences methods of email
+      it Update preferences
+    (context) Tax settings
+      it update tax settings
+
+  (feature) Promotions
+    it Cancel creation
+    it Create a invalid promotion (blank)
+    it Don't create a promotion and back
+    it Create a valid promotion
+    (context) After creation of a promotion
+      it Cancel
+      it Back to list
+
+  (feature) General links
+    it Enter to link configurations
+    it Enter to link Orders
+    it Enter to link Promotions
+    it Enter to link reports
+    it Enter to link Products
+    it Enter to link Users
+
+  (feature) Reports
+    it Don't search and back
+
+(feature) Cart
+  it Empty cart
+
+(feature) Log
+  it Log as normal user
+  it Log as admin
+  (feature) When a normal user log
+    it His account
+    it Log out
+  (feature) When a admin user log
+    it His account
+    it Log out
+
+
+
